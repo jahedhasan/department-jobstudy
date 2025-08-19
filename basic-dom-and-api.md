@@ -1,3 +1,5 @@
+## for see Query [Click here](README.md)   
+
 # Basic DOM (Document Object Model) — Cheat Sheet
 
 **Updated:** 2025-08-19
@@ -311,4 +313,5 @@ fetch('https://jsonplaceholder.typicode.com/users', {
 **Quick tips:** always handle errors, use proper auth (API keys, tokens, OAuth), and prefer HTTPS.
 
 ---
+
 
