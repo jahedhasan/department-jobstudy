@@ -1,4 +1,7 @@
+## [Basic DOM and API](basic-dom-and-api.md)   
+
 ## MySQL Employee & Department SQL Queries Documentation
+
 
 ### 1. Table Creation & Inserts
 ```sql
