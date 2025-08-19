@@ -2,7 +2,7 @@
 
 
 
-## MySQL Employee & Department SQL Queries Documentation
+# MySQL Employee & Department SQL Queries Documentation
 
 
 ### 1. Table Creation & Inserts
