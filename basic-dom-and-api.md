@@ -308,10 +308,44 @@ fetch('https://jsonplaceholder.typicode.com/users', {
 })
   .then(res => res.json())
   .then(data => console.log(data));
+
+
+// Data to send in PUT
+const putData = {
+  name: 'Jane Doe',
+  email: 'janedoe@example.com'
+};
+
+// PUT request (update user with id 1)
+fetch('https://jsonplaceholder.typicode.com/users/1', {
+  method: 'PUT',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify(putData)
+})
+  .then(response => response.json())
+  .then(updatedUser => {
+    console.log('PUT data:', updatedUser);
+  })
+  .catch(error => console.error('PUT error:', error));
+
+// DELETE request (delete user with id 1)
+fetch('https://jsonplaceholder.typicode.com/users/1', {
+  method: 'DELETE'
+})
+  .then(response => {
+    if (response.ok) {
+      console.log('DELETE successful');
+    } else {
+      console.log('DELETE failed');
+    }
+  })
+  .catch(error => console.error('DELETE error:', error));
+
 ```
 
 **Quick tips:** always handle errors, use proper auth (API keys, tokens, OAuth), and prefer HTTPS.
 
 ---
+
 
 
